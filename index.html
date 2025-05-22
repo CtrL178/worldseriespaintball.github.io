@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/core-styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="Images/worldseriespaintball.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint Ball</title>
+</head>
+<body>
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="Images/worldseriespaintball.jpg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            <h1>World Series Paintball</h1>
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Services
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Book Session</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Gear Hire</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-contact-group">
+            <a href="" class="cs-phone">
+                <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
+                +1300 66 16 50
+            </a>
+            <div class="cs-social">
+                <a href="https://www.facebook.com/WorldSeriesPaintballOakleigh" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://www.instagram.com/wspaintball/" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://www.youtube.com/@WorldSeriesPaintball/videos" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+        </div>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+                                
+
+
+
+ <!-- <button id="myButton">Click me</button> -->
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+<section id="hero-1856">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Melbourne's Premium Paintball Experience</span>
+            <h1 class="cs-title">World Series Paintball</h1>
+            <p class="cs-text">
+                Get ready to unleash your adrenaline—experience the ultimate paintball battle and paint your victory in every color!
+            </p>
+            <a href="#pricing-1790" class="cs-button-solid">Book Now</a>
+            <img class="cs-content-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-graphic.svg" alt="graphic" height="1075" width="1135" loading="lazy" decoding="async">
+        </div>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" src="Images/Gear.jpg">
+        <source media="(min-width: 601px)" src="Images/Gear.jpg">
+        <img loading="lazy" decoding="async" src="Images/Gear.jpg" alt="field" width="1920" height="1200" aria-hidden="true">
+    </picture>
+
+    <img class="cs-graphic cs-graphic-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-splatter.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+    <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+    <img class="cs-graphic cs-graphic-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-mode-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+</section>
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="services-1847">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture cs-picture1">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" src="Images/Paintball2.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" src="Images/Paintball2.jpg">
+                <img loading="lazy" decoding="async" src="Images/Paintball2.jpg">
+            </picture>
+            <!--Bottom right image-->
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" src="Images/paintball3.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" src="Images/paintball3.jpg">
+                <img loading="lazy" decoding="async" src="Images/paintball3.jpg">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Welcome !</span>
+            <h2 class="cs-title">Our Services</h2>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="https://www.youtube.com/@WorldSeriesPaintball/videos">
+                        <h3 class="cs-h3">About Us</h3>
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-white-arrow.svg" alt="icon" width="32" height="32">
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="#locations-1696">
+                        <h3 class="cs-h3">Our Locations</h3>
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-white-arrow.svg" alt="icon" width="32" height="32">
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="#cs-footer-1763">
+                        <h3 class="cs-h3">Our Socials</h3>
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-white-arrow.svg" alt="icon" width="32" height="32">
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="#pricing-1790">
+                        <h3 class="cs-h3">Pricing</h3>
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-white-arrow.svg" alt="icon" width="32" height="32">
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="#cs-footer-1763"">
+                        <h3 class="cs-h3">Services</h3>
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-white-arrow.svg" alt="icon" width="32" height="32">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--                   Pricing                    -->
+<!-- ============================================ -->
+
+<section id="pricing-1790">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Pricing</span>
+            <h2 class="cs-title">Choose Your Packages </h2>
+        </div>
+    </div>
+        <div class="cs-wrapper">
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-package">Little River</span>
+                    <div class="cs-flex-wrapper">
+                        <span class="cs-price">$45+</span>
+                        <span class="cs-frequency">
+                            / Person
+                        </span>
+                    </div>
+                    <p class="cs-item-text">
+                        4 Hour Session + Gear + Paintballs
+                    </p>
+                    <a href="" class="myButton cs-button-solid cs-price-button">Book Session</a>
+                </li>
+                <li class="cs-item cs-popular">
+                    <span class="cs-package">Oakleigh</span>
+                    <div class="cs-flex-wrapper">
+                        <span class="cs-price">$45+</span>
+                        <span class="cs-frequency">
+                            / Person
+                        </span>
+                    </div>
+                    <p class="cs-item-text">
+                        3.5 Hour Session + Gear + Paintballs
+                    </p>
+                    <a href="" class="myButton cs-button-solid cs-price-button">Book Session</a>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-package">Epping</span>
+                    <div class="cs-flex-wrapper">
+                        <span class="cs-price">$45+</span>
+                        <span class="cs-frequency">
+                            / Person
+                        </span>
+                    </div>
+                    <p class="cs-item-text">
+                        3.5 Hour Session + Gear + Paintballs
+                    </p>
+                    <a href="" class="myButton cs-button-solid cs-price-button">Book Session</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- SVG Graphic -->
+    <img class="cs-graphic cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-texture.svg" alt="graphic" height="1920" width="483" loading="lazy" decoding="async" aria-hidden="true">
+    <!--Dark mode graphic, download and save locally, then open the file in your code editor and change the fill color to match the background color of the section below it on dark mode-->
+    <img class="cs-graphic cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-spatter.svg" alt="graphic" height="1920" width="483" loading="lazy" decoding="async" aria-hidden="true">
+</section>
+
+
+<!-- ============================================ -->
+<!--                  Locations                   -->
+<!-- ============================================ -->
+
+<section id="locations-1696">
+    <div class="cs-container">
+        <!-- Left Content Section-->
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <h3 class="cs-h3">Little River</h3>
+                <span class="cs-item-text cs-address">
+                    165-315 Gifkins Road, Little River, VIC 3211 Australia
+                </span>
+                <a class="cs-item-text" href="tel:098-7654-321">+1(0) 987 654 321</a>
+                <a class="cs-item-text" href="mailto:nyc@smartax.com">info@worldseriespaintball.com.au</a>
+                <a href="https://g.co/kgs/t86fEPv" class="cs-link">
+                    <span class="cs-link-text">Get Direction</span>
+                    <img class="cs-arrow" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-arrow-right.svg"
+                            alt="icon" width="20" height="20" aria-hidden="true" />
+                </a>
+                <!--Background Image-->
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async"
+                            src="Images/Little river.jpg"
+                            alt="Little River" width="480" height="425">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <h3 class="cs-h3">Oakleigh</h3>
+                <span class="cs-item-text cs-address">
+                    9 Hamilton Street, Oakleigh, VIC 3166 Australia
+                </span>
+                <a class="cs-item-text" href="tel:098-7654-321">+1300 66 16 50
+                </a>
+                <a class="cs-item-text" href="mailto:nyc@smartax.com">info@worldseriespaintball.com.au</a>
+                <a href="https://g.co/kgs/sUoNrZ3" class="cs-link">
+                    <span class="cs-link-text">Get Direction</span>
+                    <img class="cs-arrow" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-arrow-right.svg"
+                            alt="icon" width="20" height="20" aria-hidden="true" />
+                </a>
+                <!--Background Image-->
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async"
+                            src="Images/Oakleigh.jpg"
+                            alt="Oakleigh" width="480" height="425">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <h3 class="cs-h3">Epping</h3>
+                <span class="cs-item-text cs-address">
+                     41 Miller Street, Epping, VIC 3076 Australia
+                </span>
+                <a class="cs-item-text" href="tel:098-7654-321">+1300 66 16 50</a>
+                <a class="cs-item-text" href="mailto:nyc@smartax.com">info@worldseriespaintball.com.au</a>
+                <a href="https://g.co/kgs/arsxc9u" class="cs-link">
+                    <span class="cs-link-text">Get Direction</span>
+                    <img class="cs-arrow" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-arrow-right.svg"
+                            alt="icon" width="20" height="20" aria-hidden="true" />
+                </a>
+                <!--Background Image-->
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async"
+                            src="Images/Epping.jpg"
+                            alt="Epping" width="480" height="425">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <h3 class="cs-h3">Coming Soon...</h3>
+                <span class="cs-item-text cs-address">
+                  
+                </span>
+                <a class="cs-item-text" href="tel:098-7654-321">+1300 66 16 50</a>
+                <a class="cs-item-text" href="mailto:nyc@smartax.com">info@worldseriespaintball.com.au</a>
+                <a href="https://www.instagram.com/wspaintball/" class="cs-link">
+                    <span class="cs-link-text">Get Updates!</span>
+                </a>
+                <!--Background Image-->
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async"
+                            src="Images/worldseriespaintball.jpg"
+                            alt="in progress" width="480" height="425">
+                </picture>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<!--NOTE: Make sure the section above this footer has the same background color as the footer for a seamless trasition between them-->
+
+<footer id="cs-footer-1763">
+    <!--Contact Info-->
+    <div class="cs-card-group">
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-location-pin.svg" alt="location" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Location</h3>
+                <span class="cs-card-info">9 Hamilton St, Oakleigh VIC 3166</span>
+            </div>
+        </div>
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-clock.svg" alt="clock" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Working Hours</h3>
+                <span class="cs-card-info">Monday - Sunday:  09:30am - 17:00pm </span>
+                <span class="cs-card-info">Public Holidays:  Closed</span>
+            </div>
+        </div>
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-call.svg" alt="phone" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Contact</h3>
+                <a href="" class="cs-card-info">Phone : +1300 66 16 50</a>
+                <a href="" class="cs-card-info">Email : info@worldseriespaintball.com.au</a>
+            </div>
+        </div>
+        <img class="cs-graphic cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
+        <img class="cs-graphic cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture-dark.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
+    </div>
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href=""></a>
+            <p class="cs-text">
+                Welcome to Melbourne’s premium paintball experience! Whether you’re here for thrilling action, team-building fun, or an unforgettable day out with friends, our state-of-the-art fields and expert staff are ready to deliver the ultimate adrenaline rush. Gear up, strategize, and dive into an exciting world of paintball adventure where every shot counts. Get ready to make memories that splash with excitement!
+            </p>
+        </div>
+        <!-- Links -->
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Our Services</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="">Paintball Sessions</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Equipment Hiring</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Casual Play</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Our Socials</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="https://www.youtube.com/@WorldSeriesPaintball/videos">Youtube</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="https://www.instagram.com/wspaintball/">Instagram</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="https://www.facebook.com/WorldSeriesPaintballOakleigh">Facebook</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-contact">
+            <div class="cs-contact-info">
+                <span class="cs-topper">Contact us!</span>
+                <a href="" class="cs-contact-link">+1300 66 16 50</a>
+            </div>
+            <div class="cs-contact-info">
+                <span class="cs-topper">Visit us!</span>
+                <a href="" class="cs-contact-link">9 Hamilton St, Oakleigh VIC 3166</a>
+            </div>
+        </div>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-credit">
+            © Copyright 2024 - <a href="" class="cs-credit-link" target="_blank">World Series Paintball</a>
+        </span>
+        <div class="cs-bottom-links">
+            <a href="" class="cs-bottom-link">Terms & Conditions</a>
+            <a href="" class="cs-bottom-link">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+                                
+<script src="script.js"></script>        
+</body>
+</html>
